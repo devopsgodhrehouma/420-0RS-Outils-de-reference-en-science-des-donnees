@@ -1,4 +1,4 @@
-### **Exercice Pratique : Découverte de Git avec GitHub**
+# **Exercice Pratique : Découverte de Git avec GitHub**
 
 
 ### Résumé : Ce que vous allez faire dans l'examen Git avec GitHub

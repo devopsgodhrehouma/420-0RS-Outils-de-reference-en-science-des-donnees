@@ -47,7 +47,10 @@
 
 **Conseil :** Prenez le temps de lire et comprendre chaque étape avant d’exécuter les commandes. Soyez méthodiques et notez vos erreurs pour les corriger rapidement. Bonne chance ! 
 ### Consignes :
-Utilisez ce glossaire pour retrouver les commandes appropriées pour chaque exercice sans donner directement la réponse. Assurez-vous de comprendre chaque étape et son objectif avant d'écrire les commandes dans les espaces fournis.
+Utilisez les glossaires annexes pour retrouver les commandes appropriées pour chaque exercice sans donner directement la réponse. Assurez-vous de comprendre chaque étape et son objectif avant d'écrire les commandes dans les espaces fournis.
+
+
+
 
 ---
 
@@ -147,9 +150,9 @@ Utilisez ce glossaire pour retrouver les commandes appropriées pour chaque exer
 
 
 
-
-### Annexe : Glossaire des Commandes Git
-
+---
+### Annexe 1 : Glossaire des Commandes Git
+---
 1. **Initialiser un dépôt Git local**  
    Commande pour transformer un dossier en dépôt Git local.
 
@@ -187,6 +190,127 @@ Utilisez ce glossaire pour retrouver les commandes appropriées pour chaque exer
     Commande pour afficher et vérifier les détails du dépôt distant.
 
 ---
+### Annexe 2  - Glossaire de Commandes Git (Aide-Mémoire)
+---
 
-### Consigne :
-Utilisez ce glossaire pour retrouver les commandes appropriées pour chaque exercice sans donner directement la réponse. Assurez-vous de comprendre chaque étape et son objectif avant d'écrire les commandes dans les espaces fournis.
+**Remarque :** Ces commandes sont listées dans un but éducatif pour faciliter votre travail avec Git. Essayez de comprendre leur utilisation pratique dans le contexte d’un projet !
+
+
+
+#### **Initialisation et Configuration**
+- `git init`  
+  Initialise un dépôt Git local dans le répertoire courant.
+
+- `git config --global user.name "Votre Nom"`  
+  Configure le nom de l’utilisateur pour tous les dépôts.
+
+- `git config --global user.email "votre.email@example.com"`  
+  Configure l’email de l’utilisateur pour tous les dépôts.
+
+- `git config --list`  
+  Affiche la configuration actuelle de Git.
+
+---
+
+#### **Gestion des Fichiers**
+- `git status`  
+  Affiche l’état actuel du dépôt (fichiers modifiés, suivis, non suivis).
+
+- `git add <nom_du_fichier>`  
+  Ajoute un fichier spécifique à l’index (préparation pour un commit).
+
+- `git add .`  
+  Ajoute tous les fichiers modifiés ou nouveaux au suivi.
+
+- `git rm --cached <nom_du_fichier>`  
+  Retire un fichier de l’index tout en le conservant localement.
+
+---
+
+#### **Commits**
+- `git commit -m "Message du commit"`  
+  Enregistre les modifications suivies avec un message descriptif.
+
+- `git commit -a -m "Message du commit"`  
+  Effectue un commit direct de tous les fichiers modifiés suivis, sans besoin de `git add`.
+
+- `git log`  
+  Affiche l’historique des commits.
+
+- `git log --oneline`  
+  Affiche un historique compact des commits avec un seul résumé par ligne.
+
+---
+
+#### **Dépôts Distants**
+- `git remote add origin <url_du_depot>`  
+  Ajoute un dépôt distant appelé `origin`.
+
+- `git remote -v`  
+  Affiche les dépôts distants configurés.
+
+- `git push origin <branche>`  
+  Pousse les modifications vers le dépôt distant sur une branche spécifique.
+
+- `git push -u origin <branche>`  
+  Pousse les modifications pour la première fois et configure le suivi de la branche.
+
+---
+
+#### **Mises à Jour**
+- `git pull`  
+  Récupère et fusionne les modifications d’un dépôt distant.
+
+- `git fetch`  
+  Récupère les modifications d’un dépôt distant sans les fusionner.
+
+---
+
+#### **Branchements**
+- `git branch`  
+  Affiche la liste des branches locales.
+
+- `git branch <nom_branche>`  
+  Crée une nouvelle branche.
+
+- `git checkout <nom_branche>`  
+  Passe sur une branche spécifique.
+
+- `git checkout -b <nom_branche>`  
+  Crée et passe directement sur une nouvelle branche.
+
+- `git merge <nom_branche>`  
+  Fusionne une branche spécifique dans la branche courante.
+
+---
+
+#### **Annulations et Restauration**
+- `git reset <nom_du_fichier>`  
+  Retire un fichier de l’index mais conserve ses modifications.
+
+- `git reset --soft HEAD~1`  
+  Annule le dernier commit mais conserve les modifications dans l’index.
+
+- `git reset --hard`  
+  Réinitialise tout (index et répertoire) à l’état du dernier commit.
+
+- `git checkout -- <nom_du_fichier>`  
+  Annule les modifications non suivies dans un fichier.
+
+---
+
+#### **Affichage et Débogage**
+- `git diff`  
+  Affiche les différences entre les modifications suivies et non suivies.
+
+- `git diff --staged`  
+  Affiche les différences des fichiers ajoutés à l’index.
+
+- `git show <hash_commit>`  
+  Affiche les détails d’un commit spécifique.
+
+
+
+
+
+

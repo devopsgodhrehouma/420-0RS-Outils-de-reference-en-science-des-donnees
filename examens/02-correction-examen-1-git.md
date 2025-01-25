@@ -10,6 +10,7 @@ mkdir projet-git
 cd projet-git
 git init
 git status
+git log
 ```
 
 *Explication :*  

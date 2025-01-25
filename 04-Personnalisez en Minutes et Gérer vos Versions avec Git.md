@@ -102,9 +102,11 @@ git commit -m "Prompt 2 - Ajout de liens cliquables vers les catégories"
 ---
 
 ### Prompt 3 : Créer une Animation pour les Titres
+
+```markdown
 **Objectif** : Ajouter une animation pour une meilleure expérience utilisateur.  
 **Prompt** :  
-```markdown
+
 - Animation : Le titre principal glisse de la gauche vers la droite au chargement de la page.  
 ```
 

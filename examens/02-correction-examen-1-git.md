@@ -52,6 +52,7 @@ git config --list
 echo "Contenu du fichier 1" > fichier1.txt
 git status
 git add fichier1.txt
+git status
 git commit -m "Ajout du fichier1.txt avec son contenu initial"
 git status
 ```

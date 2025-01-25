@@ -27,7 +27,16 @@ git status
 git config --global user.name "Votre Nom"
 git config --global user.email "votre.email@example.com"
 git config --list
+cat C:/Users/Haythem/.gitconfig # afficher la configuration globale
 ```
+
+```bash
+git config --local user.name "Votre Nom"
+git config --local user.email "votre.email@example.com"
+cat .git/config # afficher la configuration locale
+git config --list
+```
+
 
 *Explication :*  
 - `git config --global user.name "Votre Nom"` : Définit votre nom pour tous les dépôts locaux.  

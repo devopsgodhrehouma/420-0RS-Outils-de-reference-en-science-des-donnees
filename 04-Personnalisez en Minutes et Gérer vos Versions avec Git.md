@@ -179,10 +179,17 @@ git commit -m "Prompt 5 - Version chaotique pour tester Git"
 ### **Solution 2 : Utiliser une Branche Temporaire**  
 1. Créez une branche temporaire pour tester :  
    ```bash
+   git add.
+   git commit -m "Prompt 5 - Version chaotique pour tester Git"
+   git status
+   git branch
    git switch -c sauvegarde-version
+   git branch
    ```
 2. Fusionnez avec la branche principale :  
    ```bash
+   git log --oneline
+   git checkout <commit_id>
    git switch main
    git merge sauvegarde-version
    git branch -d sauvegarde-version

@@ -37,13 +37,27 @@ Ajoutez un rôle spécifique pour l'IA.
 ## Partie 2 : Écriture des Prompts et Validation avec Git
 
 ### Prompt 1 : Modifier la Page d'Accueil
-**Objectif** : Ajouter un titre attractif et un sous-titre.  
-**Prompt** :  
-```markdown
-- Page principale à modifier : `http://localhost:3000/`.  
-- Titre : "Formation Complète Python".  
-- Sous-titre : "Apprenez les bases du language Python."
-Plan et catégories à créer
+
+- Page à modifier : Page principale du projet accessible via la route : http://localhost:3000/  
+- Contexte : Ce projet est construit avec Docusaurus
+- Précisions sur le style : Crée un design époustouflant et moderne avec :  
+    - Animations fluides et transitions élégantes pour une navigation immersive.  
+    - Style 3D esthétique avec des éléments interactifs visuellement impressionnants.  
+    - Dégradés subtils et ombres portées légères pour un rendu visuel sophistiqué.  
+    - Typographie soignée et lisible avec des titres accrocheurs et un corps de texte confortable à lire.  
+    - Micro-interactions engageantes (effets de survol, clics dynamiques) pour enrichir l’expérience utilisateur.  
+    - Palette de couleurs harmonieuse et contemporaine en utilisant des tons modernes et apaisants.  
+    - Mise en page aérée et équilibrée, mettant en avant chaque section sans surcharge visuelle.  
+
+
+- Objectif : Captiver instantanément les visiteurs dès leur arrivée sur la page, les incitant à découvrir davantage le contenu grâce à un visuel attractif et mémorable.  
+- Boost du Prompt : Imagine que tu es un designer UI/UX professionnel avec 30 ans d'expérience et que tu travailles sur un projet phare pour une grande entreprise technologique visant à impressionner les investisseurs.  
+
+
+- Plan de formation avec des cercles interactifs :  
+
+Ajoute une présentation animée du plan de formation suivante : 
+
 
 #### **Formation Python**  
 1. Introduction à Python  

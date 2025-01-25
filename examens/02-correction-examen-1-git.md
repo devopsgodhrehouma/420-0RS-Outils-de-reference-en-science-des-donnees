@@ -122,18 +122,18 @@ git push
 
 ---
 
-#### **8.  Changez l’identité Git, Reconfigurez Git avec les identifiants de votre collègue à gauche.
+#### **8. ** Changez l’identité Git, Reconfigurez Git avec les identifiants de votre collègue à gauche.
 *(Commandes nécessaires)*
 
 ```bash
-git config --global user.name "Nom de votre collègue"
-git config --global user.email "email.collegue@example.com"
+git config --local user.name "Nom de votre collègue"
+git config --local user.email "email.collegue@example.com"
 ```
 - Par exemple : 
 
 ```bash
-git config --global user.name "HElbahidi"
-git config --global user.email "elbahidi@gmail.com"
+git config --local user.name "HElbahidi"
+git config --local user.email "elbahidi@gmail.com"
 ```
 
 ---

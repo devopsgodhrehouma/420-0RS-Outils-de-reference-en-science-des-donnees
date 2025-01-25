@@ -115,14 +115,17 @@ git commit -m "Prompt 2 - Ajout de liens cliquables vers les catégories"
 git status
 git add src/pages/index.js
 git commit -m "Prompt 3 - Le titre principal glisse de la gauche vers la droite au chargement de la page"
+git log --oneline
 ```
 
 ---
 
 ### Prompt 4 : Ajouter des Catégories
+
+```markdown
 **Objectif** : Automatiser l’ajout des catégories dans `/docs/`.  
 **Prompt** :  
-```markdown
+
 - Catégories à ajouter :  
   1. Bases du Langage Python → `/docs/bases-langage-python`.  
   2. Programmation Orientée Objet → `/docs/poo`.  
@@ -131,16 +134,17 @@ git commit -m "Prompt 3 - Le titre principal glisse de la gauche vers la droite 
 **Commandes Git** :
 ```bash
 git status
-git add docs/
-git commit -m "Prompt 4 - Ajout de catégories"
+git add .
+git commit -m "Prompt 4 - Ajout de 2 premières catégories"
 ```
 
 ---
 
 ### Prompt 5 : Tout Casser pour Tester Git
+```markdown
 **Objectif** : Créer volontairement une version chaotique pour tester Git.  
 **Prompt** :  
-```markdown
+
 - Modifications :  
   - Supprimer tous les styles CSS.  
   - Remplacer tous les titres par "ERREUR 404".  
@@ -150,7 +154,7 @@ git commit -m "Prompt 4 - Ajout de catégories"
 **Commandes Git** :
 ```bash
 git status
-git add src/css/custom.css src/pages/index.js
+git add .
 git commit -m "Prompt 5 - Version chaotique pour tester Git"
 ```
 

@@ -55,7 +55,7 @@ Ajoutez un rôle spécifique pour l'IA.
 - Boost du Prompt : Imagine que tu es un designer UI/UX professionnel avec 30 ans d'expérience et que tu travailles sur un projet phare pour une grande entreprise technologique visant à impressionner les investisseurs.  
 
 
-- Plan de formation avec des cercles interactifs :  
+- Plan de formation avec des cercles ou rectangles interactifs :  
 
 Ajoute une présentation animée du plan de formation suivante : 
 
@@ -76,15 +76,18 @@ git init
 git status
 git add .
 git commit -m "Prompt 1 - Modification de la page d'accueil"
+git status
+git log
+git log --oneline
 ```
 
 ---
 
 ### Prompt 2 : Ajouter des Liens Cliquables vers des Catégories
-**Objectif** : Intégrer des cercles interactifs redirigeant vers les catégories.  
+**Objectif** : Intégrer des liens interactifs redirigeant vers les catégories.  
 **Prompt** :  
 ```markdown
-- Lien : Chaque cercle redirige vers `/docs/{nom-categorie}`.  
+- Lien : Chaque lien redirige vers `/docs/{nom-categorie}`.  
 - Style : Animation au survol et transition fluide.  
 ```
 

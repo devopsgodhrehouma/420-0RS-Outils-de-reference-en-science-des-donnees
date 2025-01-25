@@ -7,7 +7,7 @@ Bienvenue dans cette formation !
 Nous allons explorer l'utilisation du **prompt engineering** et de l'**IA générative** pour développer un site de documentation moderne et interactif avec le **framework Docusaurus**.  
 Pour illustrer cela, nous construirons un site de formation consacré au **langage Python**.
 
----
+
 
 ## 01 - **Prérequis et outils nécessaires**
 

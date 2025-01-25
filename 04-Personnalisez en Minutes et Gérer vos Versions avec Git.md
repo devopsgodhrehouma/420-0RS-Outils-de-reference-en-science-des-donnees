@@ -114,7 +114,7 @@ git commit -m "Prompt 2 - Ajout de liens cliquables vers les catégories"
 ```bash
 git status
 git add src/pages/index.js
-git commit -m "Prompt 3 - Animation pour les titres"
+git commit -m "Prompt 3 - Le titre principal glisse de la gauche vers la droite au chargement de la page"
 ```
 
 ---

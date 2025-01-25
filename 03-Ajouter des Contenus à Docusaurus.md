@@ -12,8 +12,15 @@
      id: nouveau-document
      title: Nouveau Document
      description: Une brève description du document.
-     ---
+     date: 2025-01-26
+     slug: nouveau-document
+     --- 
+     # Nouveau Document
+     ## Introduction
+     Bonjour,
+     Je suis un nouveau document.
      ```
+     
    - Écrivez le contenu du document en Markdown.
 
 2. **Vérifiez l'intégration automatique**  

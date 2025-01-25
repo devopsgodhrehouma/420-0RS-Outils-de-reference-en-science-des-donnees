@@ -72,6 +72,7 @@ git status
 echo "Contenu du fichier 2" > fichier2.txt
 git status
 git add fichier2.txt
+git status
 git commit -m "Ajout du fichier2.txt avec son contenu initial"
 git status
 ```
@@ -85,6 +86,7 @@ git status
 echo "Contenu du fichier 3" > fichier3.txt
 git status
 git add fichier3.txt
+git status
 git commit -m "Ajout du fichier3.txt avec son contenu initial"
 git status
 ```

@@ -75,7 +75,7 @@ Ajoute une présentation animée du plan de formation suivante :
 git init
 git status
 git add .
-git commit -m "Prompt 1 - Modification du titre de la page d'accueil"
+git commit -m "Prompt 1 - Modification de la page d'accueil"
 ```
 
 ---

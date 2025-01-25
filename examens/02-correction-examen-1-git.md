@@ -135,18 +135,21 @@ git commit -m "Ajout du nom du collègue dans fichier3.txt"
 git push
 ```
 
+
 ---
 
-#### **9. Reconfigurez Git avec vos identifiants personnels.**
+#### **9. Reconfigurez Git avec les identifiants de votre collègue à gauche.**
 *(Commandes nécessaires)*
 
 ```bash
-git config user.name "Votre Nom"
-git config user.email "votre.email@example.com"
+git config user.name "HElbahidi"
+git config user.email "elbahidi@gmail.com"
 git config --list
 ```
 
 ---
+
+
 
 #### **10. Créez trois fichiers en même temps, effectuez un commit unique et poussez-les.**
 *(Commandes nécessaires)*
@@ -183,6 +186,17 @@ git remote -v
 ```
 
 ---
+
+
+#### **13. Reconfigurez Git avec vos identifiants personnels.**
+*(Commandes nécessaires)*
+
+```bash
+git config user.name "Votre Nom"
+git config user.email "votre.email@example.com"
+git config --list
+```
+
 
 ### **Résumé des commandes principales utilisées :**
 

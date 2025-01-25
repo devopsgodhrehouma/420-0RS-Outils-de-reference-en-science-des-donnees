@@ -188,3 +188,113 @@ git remote -v
    - `git log --oneline`
    - `git remote -v`
 
+
+---
+# Annexe: **Configuration Git : Locale vs Globale**
+---
+
+#### **Commande pour Configurer Git au Niveau Local**
+Pour configurer Git **localement** (uniquement pour le dépôt courant) : 
+
+```bash
+git config user.name "Votre Nom"
+git config user.email "votre.email@example.com"
+```
+
+- **Option locale :** Par défaut, la commande `git config` sans l'option `--global` configure Git au niveau **local**. Cela signifie que les paramètres s'appliqueront uniquement au dépôt courant.
+- Les informations sont stockées dans un fichier spécifique au dépôt : `.git/config`.
+
+---
+
+#### **Commande pour Configurer Git au Niveau Global**
+Pour configurer Git **globalement** (pour tous les dépôts de l'utilisateur) :
+
+```bash
+git config --global user.name "Votre Nom"
+git config --global user.email "votre.email@example.com"
+```
+
+- **Option globale :** L'option `--global` applique la configuration à tous les dépôts Git de l'utilisateur sur la machine.
+- Les informations sont stockées dans un fichier global : `~/.gitconfig` (dans le dossier utilisateur).
+
+---
+
+#### **Commande pour Configurer Git au Niveau Système**
+Pour configurer Git **au niveau système** (pour tous les utilisateurs de la machine) :
+
+```bash
+git config --system user.name "Votre Nom"
+git config --system user.email "votre.email@example.com"
+```
+
+- **Option système :** L'option `--system` modifie les paramètres au niveau global de la machine (accessible à tous les utilisateurs).
+- Les informations sont stockées dans un fichier système (généralement dans `/etc/gitconfig`).
+
+---
+
+#### **Commande pour Afficher la Configuration Actuelle**
+
+```bash
+git config --list
+```
+
+- Affiche la configuration active en combinant les niveaux **système**, **global**, et **local**.  
+- Vous pouvez aussi préciser le niveau :  
+  - `git config --global --list` : Affiche uniquement les paramètres globaux.  
+  - `git config --local --list` : Affiche uniquement les paramètres locaux.  
+
+---
+
+### **Différence entre Configuration Locale et Globale**
+
+| **Aspect**            | **Locale**                            | **Globale**                           |
+|------------------------|---------------------------------------|---------------------------------------|
+| **Niveau d'application** | Dépôt courant uniquement              | Tous les dépôts de l'utilisateur      |
+| **Commande par défaut**  | `git config`                         | `git config --global`                 |
+| **Fichier utilisé**      | `.git/config` (dans le dépôt)         | `~/.gitconfig` (dossier utilisateur)  |
+| **Priorité**             | Plus élevée                         | Moins élevée                          |
+| **Exemple d'utilisation**| Configurer un dépôt spécifique pour travailler sous un alias ou en tant que collègue. | Configurer le nom et l'email par défaut pour tous les dépôts. |
+
+---
+
+### **Exemple de Conflit : Priorité**
+
+Si vous configurez différentes informations au niveau **local** et **global**, voici comment Git décide quelle configuration utiliser :
+
+1. **Local :** La configuration locale a la priorité.
+2. **Global :** Si la configuration locale n'existe pas, Git utilisera la configuration globale.
+3. **Système :** Si aucune configuration locale ou globale n'est trouvée, Git utilisera les paramètres système.
+
+#### Exemple :
+- Configuration globale :
+  ```bash
+  git config --global user.name "Nom Global"
+  ```
+- Configuration locale (dans un dépôt spécifique) :
+  ```bash
+  git config user.name "Nom Local"
+  ```
+
+Lors d’un commit dans le dépôt courant, Git utilisera `Nom Local`.
+
+---
+
+### **Résumé des Commandes Importantes**
+
+1. Configurer localement (par dépôt) :
+   ```bash
+   git config user.name "Votre Nom"
+   git config user.email "votre.email@example.com"
+   ```
+
+2. Configurer globalement (tous les dépôts) :
+   ```bash
+   git config --global user.name "Votre Nom"
+   git config --global user.email "votre.email@example.com"
+   ```
+
+3. Vérifier la configuration active :
+   ```bash
+   git config --list
+   ```
+

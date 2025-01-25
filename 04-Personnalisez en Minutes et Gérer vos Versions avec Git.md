@@ -41,8 +41,18 @@ Ajoutez un rôle spécifique pour l'IA.
 **Prompt** :  
 ```markdown
 - Page principale à modifier : `http://localhost:3000/`.  
-- Titre : "Formation Complète Docusaurus & IA".  
-- Sous-titre : "Apprenez à exploiter l'IA générative pour optimiser vos projets."  
+- Titre : "Formation Complète Python".  
+- Sous-titre : "Apprenez les bases du language Python."
+Plan et catégories à créer
+
+#### **Formation Python**  
+1. Introduction à Python  
+2. Bases du Langage Python  
+3. Fonctions et Modules  
+4. Gestion des Fichiers  
+5. Programmation Orientée Objet (POO)  
+6. Projet Final  
+
 ```
 
 **Commandes Git** :

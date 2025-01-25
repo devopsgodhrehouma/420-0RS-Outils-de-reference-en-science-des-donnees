@@ -99,7 +99,7 @@ git status
 ```bash
 git remote add origin https://github.com/votre-utilisateur/projet-git.git
 git remote -v
-git push -u origin main
+git push -u origin main # (ou git push --set-upstream origin main)
 ```
 
 *Explication :*  

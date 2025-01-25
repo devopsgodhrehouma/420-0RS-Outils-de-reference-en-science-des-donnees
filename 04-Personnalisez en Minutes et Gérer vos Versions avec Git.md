@@ -4,8 +4,6 @@
 
 ## Partie 1 : Concevoir un Bon Prompt
 
-Pour maximiser l'efficacité des prompts, voici un guide étape par étape :
-
 ### **1.1 Préciser la Page à Modifier**  
 Indiquez clairement la page ou la section à modifier.  
 **Exemple** : La page principale à `http://localhost:3000/`.
@@ -33,12 +31,6 @@ Ajoutez un rôle spécifique pour l'IA.
 4. Gestion des Fichiers  
 5. Programmation Orientée Objet (POO)  
 6. Projet Final  
-
-#### **Plan 2 : Prompt Engineering et IA Générative**  
-1. Introduction à l'IA générative  
-2. Optimisation des Prompts  
-3. Automatisation avancée avec Make (Integromat)  
-4. Création d’un Funnel de Vente  
 
 ---
 
@@ -134,17 +126,30 @@ git commit -m "Prompt 5 - Version chaotique pour tester Git"
 
 ## Partie 3 : Restaurer une Version Précédente avec Git
 
-1. **Lister les Commits** :  
+### **Solution 1 : Forcer la Branche Principale**  
+1. Affichez les commits récents :  
    ```bash
-   git log
+   git log --oneline
    ```
-2. **Restaurer une Version Stable** :  
+2. Revenir à un commit stable :  
    ```bash
    git checkout <commit_id>
+   git branch -f main HEAD
+   git switch main
    ```
-3. **Relancez le Site** :  
+
+---
+
+### **Solution 2 : Utiliser une Branche Temporaire**  
+1. Créez une branche temporaire pour tester :  
    ```bash
-   npm start
+   git switch -c sauvegarde-version
+   ```
+2. Fusionnez avec la branche principale :  
+   ```bash
+   git switch main
+   git merge sauvegarde-version
+   git branch -d sauvegarde-version
    ```
 
 ---
@@ -171,8 +176,8 @@ git commit -m "Prompt 5 - Version chaotique pour tester Git"
 
 ### Bonnes Pratiques
 
-- **Stabilité** : Gardez une branche `main` stable.  
-- **Branches Fonctionnelles** : Créez une branche par fonctionnalité ou modification risquée.  
-- **Restauration** : Utilisez `git checkout` pour tester des versions antérieures.  
+- **Branches Fonctionnelles** : Créez une branche pour chaque fonctionnalité.  
+- **Restauration** : Utilisez `git checkout` pour revenir à des versions stables.  
+- **Fusion Propre** : Testez toujours vos modifications sur une branche temporaire avant de fusionner avec `main`.  
 
-Ce guide vous assure une gestion efficace des prompts et des versions avec Git.
+Ce guide garantit un développement sûr et organisé, même avec des prompts risqués.

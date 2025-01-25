@@ -122,29 +122,32 @@ git push
 
 ---
 
-#### **8. Changez l’identité Git, modifiez `fichier3.txt`, effectuez un commit et poussez les modifications.**
+#### **8.  Changez l’identité Git, Reconfigurez Git avec les identifiants de votre collègue à gauche.
 *(Commandes nécessaires)*
 
 ```bash
-git config user.name "Nom de votre collègue"
-git config user.email "email.collegue@example.com"
-echo "Ajout du nom du collègue" >> fichier3.txt
-git status
-git add fichier3.txt
-git commit -m "Ajout du nom du collègue dans fichier3.txt"
-git push
+git config --global user.name "Nom de votre collègue"
+git config --global user.email "email.collegue@example.com"
 ```
+- Par exemple : 
 
+```bash
+git config --global user.name "HElbahidi"
+git config --global user.email "elbahidi@gmail.com"
+```
 
 ---
 
-#### **9. Reconfigurez Git avec les identifiants de votre collègue à gauche.**
+#### **9. **  Modifiez `fichier3.txt`, effectuez un commit et poussez les modifications.****
 *(Commandes nécessaires)*
 
 ```bash
-git config user.name "HElbahidi"
-git config user.email "elbahidi@gmail.com"
-git config --list
+echo "Ajout du nom du collègue" >> fichier3.txt
+git status
+git add fichier3.txt
+git status
+git commit -m "Ajout du nom du collègue dans fichier3.txt"
+git push
 ```
 
 ---

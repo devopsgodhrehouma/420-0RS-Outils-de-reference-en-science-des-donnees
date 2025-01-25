@@ -190,6 +190,7 @@ git commit -m "Prompt 5 - Version chaotique pour tester Git"
    ```bash
    git log --oneline
    git checkout <commit_id>
+   git branch -f sauvegarde-version HEAD
    git switch main
    git merge sauvegarde-version
    git branch -d sauvegarde-version

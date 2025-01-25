@@ -84,9 +84,10 @@ git log --oneline
 ---
 
 ### Prompt 2 : Ajouter des Liens Cliquables vers des Catégories
+
+```markdown
 **Objectif** : Intégrer des liens interactifs redirigeant vers les catégories.  
 **Prompt** :  
-```markdown
 - Lien : Chaque lien redirige vers `/docs/{nom-categorie}`.  
 - Style : Animation au survol et transition fluide.  
 ```

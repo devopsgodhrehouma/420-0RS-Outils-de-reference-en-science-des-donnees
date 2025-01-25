@@ -21,7 +21,7 @@ git log
 
 ---
 
-#### **2. Configurez votre identité locale Git.**
+#### **2. Configurez vos identités globale et locale Git.**
 *(Commandes nécessaires pour configurer votre identité locale)*
 
 ```bash

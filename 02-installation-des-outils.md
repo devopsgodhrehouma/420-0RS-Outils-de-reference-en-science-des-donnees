@@ -1,8 +1,6 @@
 ### Création d'un site de formation avec Docusaurus - Partie 1 (installation des outils)
 
----
-
-#### 00 - **Introduction**
+## 00 - **Introduction**
 
 Bienvenue dans cette formation !
 
@@ -11,7 +9,7 @@ Pour illustrer cela, nous construirons un site de formation consacré au **langa
 
 ---
 
-#### 01 - **Prérequis et outils nécessaires**
+## 01 - **Prérequis et outils nécessaires**
 
 Pour bien démarrer, voici les outils essentiels à installer :
 
@@ -36,7 +34,6 @@ Pour bien démarrer, voici les outils essentiels à installer :
 3. **Curso AI** (facultatif)  
    - Un outil pour automatiser certaines tâches et explorer les capacités de l'IA.
 
----
 
 Dans les parties suivantes, nous découvrirons :
 

@@ -38,6 +38,7 @@ Ajoutez un rôle spécifique pour l'IA.
 
 ### Prompt 1 : Modifier la Page d'Accueil
 
+```bash
 - Page à modifier : Page principale du projet accessible via la route : http://localhost:3000/  
 - Contexte : Ce projet est construit avec Docusaurus
 - Précisions sur le style : Crée un design époustouflant et moderne avec :  

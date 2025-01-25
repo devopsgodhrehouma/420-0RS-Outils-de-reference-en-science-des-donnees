@@ -72,6 +72,7 @@ Ajoute une présentation animée du plan de formation suivante :
 
 **Commandes Git** :
 ```bash
+git init
 git status
 git add .
 git commit -m "Prompt 1 - Modification du titre de la page d'accueil"

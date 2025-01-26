@@ -177,23 +177,96 @@ git commit -m "Prompt 5 - Version chaotique pour tester Git"
 ---
 
 ### **Solution 2 : Utiliser une Branche Temporaire**  
-1. Créez une branche temporaire pour tester :  
+
+
+1. **Ajoutez et committez toutes les modifications actuelles** avant de basculer :  
    ```bash
-   git add.
-   git commit -m "Prompt 5 - Version chaotique pour tester Git"
-   git status
-   git branch
-   git switch -c sauvegarde-version
-   git branch
+   git add .
+   git commit -m "Sauvegarde avant création de la branche temporaire"
    ```
-2. Fusionnez avec la branche principale :  
+2. **Vérifiez l’état du dépôt** pour éviter des problèmes de fichiers non suivis ou en conflit :  
+   ```bash
+   git status
+   ```
+   
+3. **Créer une branche temporaire** :  
+   ```bash
+   git switch -c sauvegarde-version
+   ```
+   Si cette commande échoue, utilisez :  
+   ```bash
+   git checkout -b sauvegarde-version
+   ```
+
+4. **Aligner la branche temporaire sur le commit cible** :  
+   Identifiez le commit cible à l’aide de :  
    ```bash
    git log --oneline
-   git checkout <commit_id>
-   git branch -f sauvegarde-version HEAD
+   ```
+   Puis alignez :  
+   ```bash
+   git reset --hard <commit_id>
+   ```
+
+5. **Fusionner proprement avec la branche principale**
+
+   Basculez vers la branche principale :  
+   ```bash
+   git switch main
+   ```
+   Fusionnez la branche temporaire :  
+   ```bash
+   git merge sauvegarde-version
+   ```
+   Supprimez la branche temporaire une fois la fusion réussie :  
+   ```bash
+   git branch -d sauvegarde-version
+   ```
+
+
+6. **Autres conseils pour éviter les erreurs**
+
+- **Nettoyez votre dépôt avant chaque manipulation** :  
+   Si vous avez des modifications en attente, utilisez :
+   ```bash
+   git stash
+   ```
+   pour les sauvegarder temporairement.
+
+- **Testez toujours la fusion dans un environnement isolé** avant d’appliquer à la branche principale.
+
+- **Utilisez des alias Git pour simplifier les commandes longues** :  
+   Par exemple, pour voir un journal concis :  
+   ```bash
+   git config --global alias.lg "log --oneline --graph --decorate"
+   ```
+
+7. **Exemple complet du processus**
+
+
+*Créer et aligner une branche temporaire* :
+   ```bash
+   git switch -c sauvegarde-version
+   git reset --hard <commit_id>
+   ```
+*Fusionner et nettoyer* :
+   ```bash
    git switch main
    git merge sauvegarde-version
    git branch -d sauvegarde-version
+   ```
+
+
+
+
+
+### **Solution 3 : Utiliser la commande git revert**  
+
+
+   ```bash
+   git log --oneline
+   git revert <id_du_commit>
+   git log --oneline
    ```
 
 ---
@@ -205,16 +278,15 @@ git commit -m "Prompt 5 - Version chaotique pour tester Git"
    git init
    git config --global user.name "Votre Nom"
    git config --global user.email "votre.email@example.com"
-   ```
-2. **Enregistrement des Modifications** :  
-   ```bash
+   git local --global user.name "Votre Nom"
+   git local --global user.email "votre.email@example.com"
+   echo "Modification" > fichier1.txt
    git add .
    git commit -m "Votre message"
-   ```
-3. **Pousser vers GitHub** :  
-   ```bash
+   git log --oneline
    git push origin main
    ```
+
 
 ---
 

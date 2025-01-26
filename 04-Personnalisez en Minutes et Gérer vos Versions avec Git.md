@@ -287,6 +287,47 @@ git commit -m "Prompt 5 - Version chaotique pour tester Git"
    git push origin main
    ```
 
+# 1
+
+
+   ```bash
+   git log --oneline
+   git checkout <commit_id>
+   git branch -f main HEAD
+   git switch main
+   ```
+
+# 2
+
+
+   ```bash
+   git add .
+   git commit -m "Sauvegarde avant création de la branche temporaire"
+   git status
+   git switch -c sauvegarde-version
+   git checkout -b sauvegarde-version
+   git log --oneline
+   git reset --hard <commit_id>
+   git switch main
+   git merge sauvegarde-version
+   git branch -d sauvegarde-version
+   ```
+
+   ```bash
+   git stash
+   git config --global alias.lg "log --oneline --graph --decorate"
+   ```
+
+
+# 3
+
+```bash
+git log --oneline
+git revert <id_du_commit>
+git log --oneline
+```
+
+# 4
 
 ---
 

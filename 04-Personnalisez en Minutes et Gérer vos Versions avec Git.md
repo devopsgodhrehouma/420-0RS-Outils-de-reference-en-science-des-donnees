@@ -2,7 +2,7 @@
 
 ---
 
-## Partie 1 : Concevoir un Bon Prompt
+# Partie 1 : Concevoir un Bon Prompt
 
 ### **1.1 Préciser la Page à Modifier**  
 Indiquez clairement la page ou la section à modifier.  
@@ -34,7 +34,7 @@ Ajoutez un rôle spécifique pour l'IA.
 
 ---
 
-## Partie 2 : Écriture des Prompts et Validation avec Git
+# Partie 2 : Écriture des Prompts et Validation avec Git
 
 ### Prompt 1 : Modifier la Page d'Accueil
 
@@ -60,7 +60,7 @@ Ajoutez un rôle spécifique pour l'IA.
 Ajoute une présentation animée du plan de formation suivante : 
 
 
-#### **Formation Python**  
+#### Formation Python
 1. Introduction à Python  
 2. Bases du Langage Python  
 3. Fonctions et Modules  
@@ -160,7 +160,7 @@ git commit -m "Prompt 5 - Version chaotique pour tester Git"
 
 ---
 
-## Partie 3 : Restaurer une Version Précédente avec Git
+# Partie 3 : Restaurer une Version Précédente avec Git
 
 ### **Solution 1 : Forcer la Branche Principale**  
 1. Affichez les commits récents :  
@@ -198,7 +198,7 @@ git commit -m "Prompt 5 - Version chaotique pour tester Git"
 
 ---
 
-## Partie 4 : Workflow Git Recommandé
+# Partie 4 : Workflow Git Recommandé
 
 1. **Initialisation** :  
    ```bash

@@ -287,7 +287,7 @@ git commit -m "Prompt 5 - Version chaotique pour tester Git"
    git push origin main
    ```
 
-# 1
+# 1 -  git checkout <commit_id> (1 branche main)
 
 
    ```bash
@@ -296,8 +296,8 @@ git commit -m "Prompt 5 - Version chaotique pour tester Git"
    git branch -f main HEAD
    git switch main
    ```
-
-# 2
+ 
+# 2 - git reset --hard <commit_id> (2 branches)
 
 
    ```bash
@@ -319,7 +319,7 @@ git commit -m "Prompt 5 - Version chaotique pour tester Git"
    ```
 
 
-# 3
+# 3 - git revert <id_du_commit> (1 branche)
 
 ```bash
 git log --oneline

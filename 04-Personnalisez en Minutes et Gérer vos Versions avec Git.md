@@ -86,8 +86,8 @@ git log --oneline
 ### Prompt 2 : Ajouter des Liens Cliquables vers des Catégories
 
 ```markdown
-**Objectif** : Intégrer des liens interactifs redirigeant vers les catégories.  
-**Prompt** :  
+Objectif : Intégrer des liens interactifs redirigeant vers les catégories.  
+Prompt :  
 - Lien : Chaque lien redirige vers `/docs/{nom-categorie}`.  
 - Style : Animation au survol et transition fluide.  
 ```
@@ -104,8 +104,8 @@ git commit -m "Prompt 2 - Ajout de liens cliquables vers les catégories"
 ### Prompt 3 : Créer une Animation pour les Titres
 
 ```markdown
-**Objectif** : Ajouter une animation pour une meilleure expérience utilisateur.  
-**Prompt** :  
+Objectif : Ajouter une animation pour une meilleure expérience utilisateur.  
+Prompt :  
 
 - Animation : Le titre principal glisse de la gauche vers la droite au chargement de la page.  
 ```
@@ -123,8 +123,8 @@ git log --oneline
 ### Prompt 4 : Ajouter des Catégories
 
 ```markdown
-**Objectif** : Automatiser l’ajout des catégories dans `/docs/`.  
-**Prompt** :  
+Objectif : Automatiser l’ajout des catégories dans `/docs/`.  
+Prompt :  
 
 - Catégories à ajouter :  
   1. Bases du Langage Python → `/docs/bases-langage-python`.  
@@ -142,8 +142,8 @@ git commit -m "Prompt 4 - Ajout de 2 premières catégories"
 
 ### Prompt 5 : Tout Casser pour Tester Git
 ```markdown
-**Objectif** : Créer volontairement une version chaotique pour tester Git.  
-**Prompt** :  
+Objectif : Créer volontairement une version chaotique pour tester Git.  
+Prompt :  
 
 - Modifications :  
   - Supprimer tous les styles CSS.  
